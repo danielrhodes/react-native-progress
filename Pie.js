@@ -34,6 +34,7 @@ export class ProgressPie extends Component {
     size: PropTypes.number,
     style: PropTypes.any,
     unfilledColor: PropTypes.string,
+    fill: PropTypes.string,
   };
 
   static defaultProps = {
@@ -41,6 +42,7 @@ export class ProgressPie extends Component {
     color: 'rgba(0, 122, 255, 1)',
     progress: 0,
     size: 40,
+    fill: 'transparent'
   };
 
   render() {
