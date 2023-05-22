@@ -57,6 +57,7 @@ export class ProgressPie extends Component {
       size,
       style,
       unfilledColor,
+      fill,
       ...restProps
     } = this.props;
 
@@ -103,6 +104,7 @@ export class ProgressPie extends Component {
               radius={size / 2}
               stroke={borderColor || color}
               strokeWidth={borderWidth}
+              fill={unfilledColor}
             />
           ) : (
             false
